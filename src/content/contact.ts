@@ -13,6 +13,6 @@ export const contactNote =
 export const contribute = {
   title: "Contribua",
   text: "[TEXTO OFICIAL A DEFINIR]",
-  buttonLabel: "[LINK OFICIAL A DEFINIR]",
-  href: null as string | null,
+  buttonLabel: "Assine aqui",
+  href: "https://docs.google.com/forms/d/e/1FAIpQLSe-WFYjZFsQVAAbpx2SuYnOKhXaFRMoV4oIcYM3IP7Z6rSmxw/viewform" as string | null,
 };
