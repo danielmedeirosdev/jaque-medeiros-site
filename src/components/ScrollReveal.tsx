@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const revealSelector = [
   ".section-head",
@@ -14,6 +15,8 @@ const revealSelector = [
 ].join(",");
 
 export function ScrollReveal() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const reduceMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
@@ -46,7 +49,7 @@ export function ScrollReveal() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
 
   return null;
 }
