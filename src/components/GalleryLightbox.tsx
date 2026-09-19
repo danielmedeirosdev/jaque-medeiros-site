@@ -42,14 +42,17 @@ export function GalleryLightbox({ photos }: { photos: PhotoRecord[] }) {
         {photos.map((photo, photoIndex) => (
           <figure
             key={photo.id}
-            className={photoIndex % 5 === 1 ? "gallery-edit-wide" : undefined}
+            className={`gallery-edit-${photo.orientation}`}
           >
             <button
               type="button"
               className="gallery-open"
               onClick={() => setIndex(photoIndex)}
             >
-              <span className="gallery-frame">
+              <span
+                className="gallery-frame"
+                style={{ aspectRatio: photo.aspectRatio }}
+              >
                 <Image
                   src={photo.src}
                   alt={photo.alt}

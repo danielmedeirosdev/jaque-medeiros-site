@@ -1,18 +1,55 @@
-export const channels = [
-  { id: "instagram", label: "Instagram", value: "[LINK A DEFINIR]" },
-  { id: "facebook", label: "Facebook", value: "[LINK A DEFINIR]" },
-  { id: "youtube", label: "YouTube", value: "[LINK A DEFINIR]" },
-  { id: "email", label: "E-mail", value: "[LINK A DEFINIR]" },
-  { id: "whatsapp", label: "WhatsApp", value: "[LINK A DEFINIR]" },
-  { id: "linkedin", label: "LinkedIn", value: "[LINK A DEFINIR]" },
-] as const;
+export type Channel = {
+  id: string;
+  label: string;
+  value: string;
+  href: string | null;
+  status: "live" | "soon";
+};
+
+export const channels: Channel[] = [
+  {
+    id: "instagram",
+    label: "Instagram",
+    value: "@jaquemedeirospt",
+    href: "https://www.instagram.com/jaquemedeirospt/",
+    status: "live",
+  },
+  {
+    id: "email",
+    label: "E-mail",
+    value: "jacquecamposfotografia@gmail.com",
+    href: "mailto:jacquecamposfotografia@gmail.com",
+    status: "live",
+  },
+  {
+    id: "whatsapp",
+    label: "WhatsApp",
+    value: "+55 19 98257-1019",
+    href: "https://zapdajaque.netlify.app/",
+    status: "live",
+  },
+  {
+    id: "facebook",
+    label: "Facebook",
+    value: "Em breve",
+    href: null,
+    status: "soon",
+  },
+  {
+    id: "youtube",
+    label: "YouTube",
+    value: "Em breve",
+    href: null,
+    status: "soon",
+  },
+];
 
 export const contactNote =
-  "Canais oficiais serão publicados somente após confirmação da equipe.";
+  "Fale com a campanha pelo Instagram, e-mail ou WhatsApp. Os demais canais serão publicados assim que a equipe confirmar.";
 
 export const contribute = {
-  title: "Contribua",
-  text: "[TEXTO OFICIAL A DEFINIR]",
-  buttonLabel: "Assine aqui",
-  href: "https://docs.google.com/forms/d/e/1FAIpQLSe-WFYjZFsQVAAbpx2SuYnOKhXaFRMoV4oIcYM3IP7Z6rSmxw/viewform" as string | null,
+  title: "Apoie a campanha",
+  text: "Sua contribuição fortalece a comunicação, a presença no território e a organização da campanha de Jaque Medeiros, candidata a deputada estadual pelo PT.",
+  buttonLabel: "Quero apoiar",
+  href: "https://queroapoiar.com.br/jaquemedeiros" as string | null,
 };

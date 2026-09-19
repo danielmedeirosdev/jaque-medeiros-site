@@ -3,12 +3,15 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { navItems } from "@/content/nav";
+import { BrandLogo } from "@/components/BrandLogo";
+import { SocialLinks } from "@/components/SocialLinks";
+import { contributeCta, navItems } from "@/content/nav";
 import { person } from "@/content/person";
 
 export function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     setOpen(false);
@@ -21,11 +24,27 @@ export function SiteHeader() {
     };
   }, [open]);
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const isCurrent = (href: string) => {
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
+  };
+
   return (
-    <header className="site-header">
+    <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
       <div className="header-inner">
-        <Link href="/" className="brand">
-          {person.publicName}
+        <Link
+          href="/"
+          className="brand"
+          aria-label={`${person.publicName} ${person.ballotNumber} — início`}
+        >
+          <BrandLogo variant="ink" priority className="brand-logo brand-logo-header" />
         </Link>
 
         <nav className="nav-desktop" aria-label="Principal">
@@ -33,24 +52,22 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              aria-current={
-                item.href === "/"
-                  ? pathname === "/"
-                    ? "page"
-                    : undefined
-                  : pathname.startsWith(item.href)
-                    ? "page"
-                    : undefined
-              }
+              aria-current={isCurrent(item.href) ? "page" : undefined}
             >
               {item.label}
             </Link>
           ))}
+          <SocialLinks tone="dark" className="nav-social" />
+          {contributeCta.enabled ? (
+            <Link href={contributeCta.href} className="btn btn-nav">
+              {contributeCta.label}
+            </Link>
+          ) : null}
         </nav>
 
         <button
           type="button"
-          className="menu-toggle"
+          className={`menu-toggle${open ? " is-open" : ""}`}
           aria-label={open ? "Fechar menu" : "Abrir menu"}
           aria-expanded={open}
           aria-controls="menu-principal"
@@ -73,6 +90,12 @@ export function SiteHeader() {
             {item.label}
           </Link>
         ))}
+        <SocialLinks tone="dark" className="drawer-social" />
+        {contributeCta.enabled ? (
+          <Link href={contributeCta.href} className="btn btn-primary drawer-cta">
+            {contributeCta.label}
+          </Link>
+        ) : null}
       </nav>
     </header>
   );

@@ -1,29 +1,52 @@
 import { pageMeta } from "@/components/InnerPage";
+import { SocialIcon, isSocialIconId } from "@/components/SocialIcon";
+import { SocialLinks } from "@/components/SocialLinks";
 import { channels, contactNote } from "@/content/contact";
 import { person } from "@/content/person";
 
-export const metadata = pageMeta("Contato");
+export const metadata = pageMeta(
+  "Contato",
+  `Fale com a campanha de ${person.publicName}.`,
+  "/contato",
+);
 
 export default function ContatoPage() {
   return (
     <article className="inner-page">
-      <p className="kicker">Fale com a Jaque</p>
-      <h1 className="chapter-title" style={{ marginTop: "0.7rem" }}>
-        Contato
-      </h1>
-      <p className="intro-text" style={{ marginTop: "1.4rem" }}>
+      <p className="kicker">Campanha</p>
+      <h1 className="chapter-title">Contato</h1>
+      <p className="lead" style={{ marginTop: "1.4rem" }}>
         {contactNote}
       </p>
+      <SocialLinks tone="dark" className="contact-social" />
       <ul className="channel-list">
         {channels.map((channel) => (
           <li key={channel.id}>
-            <span>{channel.label}</span>
-            <span>{channel.value}</span>
+            <span className="channel-label">
+              {isSocialIconId(channel.id) ? (
+                <span className="channel-icon" aria-hidden="true">
+                  <SocialIcon id={channel.id} />
+                </span>
+              ) : null}
+              {channel.label}
+            </span>
+            {channel.href ? (
+              <a
+                href={channel.href}
+                {...(channel.href.startsWith("http")
+                  ? { target: "_blank", rel: "noreferrer" }
+                  : {})}
+              >
+                {channel.value}
+              </a>
+            ) : (
+              <span className="body-muted">{channel.value}</span>
+            )}
           </li>
         ))}
       </ul>
-      <p className="muted-note">
-        {person.city}, {person.state}
+      <p className="muted-note" style={{ marginTop: "1.75rem" }}>
+        {person.city}, {person.state} · {person.party.name}
       </p>
     </article>
   );

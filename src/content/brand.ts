@@ -1,0 +1,16 @@
+export const brand = {
+  red: "#E30613",
+  redDeep: "#9F0010",
+  yellow: "#F5C518",
+  yellowSoft: "#FFE566",
+  ink: "#0A0A0A",
+  paper: "#FFFFFF",
+  logoOfficial: "/brand/logo-jaque-official.png",
+  logoInk: "/brand/logo-jaque-ink.png",
+  logoWhite: "/brand/logo-jaque-white.png",
+  favicon: "/brand/favicon.svg",
+  favicon32: "/brand/favicon-32.png",
+  ogImage: "/brand/og-jaque.png",
+  appleTouchIcon: "/brand/apple-touch-icon.png",
+  starYellow: "/brand/star-yellow.png",
+} as const;

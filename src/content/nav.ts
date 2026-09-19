@@ -1,15 +1,16 @@
 export const navItems = [
   { href: "/", label: "Início" },
-  { href: "/trajetoria", label: "Trajetória" },
-  { href: "/pesquisa", label: "Pesquisa" },
-  { href: "/atuacao", label: "Atuação" },
+  { href: "/trajetoria", label: "Quem é" },
+  { href: "/manifesto", label: "Manifesto" },
+  { href: "/atuacao", label: "Propostas" },
   { href: "/projetos", label: "Projetos" },
-  { href: "/noticias", label: "Notícias" },
   { href: "/contato", label: "Contato" },
 ] as const;
 
+export const extraFooterItems = [{ href: "/galeria", label: "Galeria" }] as const;
+
 export const contributeCta = {
   href: "/contribua",
-  label: "Contribua",
-  enabled: false,
+  label: "Apoie",
+  enabled: true,
 } as const;

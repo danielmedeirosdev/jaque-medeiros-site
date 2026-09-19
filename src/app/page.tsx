@@ -1,12 +1,16 @@
-import { HeroEditorial } from "@/components/HeroEditorial";
-import { IntroBlock } from "@/components/IntroBlock";
+import { AboutPreview } from "@/components/AboutPreview";
+import { HeroCampaign } from "@/components/HeroCampaign";
+import { HomeCta } from "@/components/HomeCta";
+import { PrioritiesSection } from "@/components/PrioritiesSection";
 import { heroPhoto, introPhoto, photos } from "@/lib/photos";
 
 export default function HomePage() {
   return (
     <>
-      <HeroEditorial imageSrc={heroPhoto} imageAlt={photos.retratoGesto.alt} />
-      <IntroBlock imageSrc={introPhoto} imageAlt={photos.auditorio.alt} />
+      <HeroCampaign imageSrc={heroPhoto} imageAlt={photos.retratoGesto.alt} />
+      <AboutPreview imageSrc={introPhoto} imageAlt={photos.retratoBracos.alt} />
+      <PrioritiesSection />
+      <HomeCta />
     </>
   );
 }

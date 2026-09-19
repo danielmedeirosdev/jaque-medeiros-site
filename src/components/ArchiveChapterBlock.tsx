@@ -9,7 +9,7 @@ export function ArchiveChapterBlock({ chapter }: { chapter: ArchiveChapter }) {
       {isFull ? (
         <>
           <div
-            className={`chapter-photo full ${chapter.photo.treatment === "bw" ? "bw" : ""}`}
+            className={`chapter-photo full${chapter.photo.treatment === "bw" ? " bw" : ""}`}
           >
             {chapter.photo.src ? (
               <Image
@@ -21,30 +21,23 @@ export function ArchiveChapterBlock({ chapter }: { chapter: ArchiveChapter }) {
             ) : (
               <div className="photo-placeholder">{chapter.photo.alt}</div>
             )}
+            <div className="chapter-scrim" />
           </div>
           <div className="chapter-copy overlay-copy">
             <p className="chapter-meta">{chapter.period}</p>
-            <h2 className="chapter-title" style={{ marginTop: "0.7rem" }}>
-              {chapter.title}
-            </h2>
-            <p className="intro-text" style={{ marginTop: "1.25rem" }}>
-              {chapter.body}
-            </p>
+            <h2 className="chapter-title">{chapter.title}</h2>
+            <p className="lead">{chapter.body}</p>
           </div>
         </>
       ) : (
         <>
           <div className="chapter-copy">
             <p className="chapter-meta">{chapter.period}</p>
-            <h2 className="chapter-title" style={{ marginTop: "0.7rem" }}>
-              {chapter.title}
-            </h2>
-            <p className="intro-text" style={{ marginTop: "1.25rem" }}>
-              {chapter.body}
-            </p>
+            <h2 className="chapter-title">{chapter.title}</h2>
+            <p className="lead">{chapter.body}</p>
           </div>
           <div
-            className={`chapter-photo ${chapter.photo.treatment === "bw" ? "bw" : ""}`}
+            className={`chapter-photo${chapter.photo.treatment === "bw" ? " bw" : ""}`}
           >
             {chapter.photo.src ? (
               <Image

@@ -1,19 +1,22 @@
 import Image from "next/image";
 import { pageMeta } from "@/components/InnerPage";
+import { person } from "@/content/person";
 import { researchIntro, researchItems } from "@/content/research";
 import { photos } from "@/lib/photos";
 
-export const metadata = pageMeta("Pesquisa");
+export const metadata = pageMeta(
+  "Pesquisa",
+  `Formação e pesquisa de ${person.publicName} em jornalismo científico.`,
+  "/pesquisa",
+);
 
 export default function PesquisaPage() {
   return (
     <article className="section pesquisa">
       <p className="kicker">Formação</p>
-      <h1 className="chapter-title" style={{ marginTop: "0.7rem" }}>
-        Pesquisa
-      </h1>
+      <h1 className="chapter-title">Pesquisa</h1>
       <div className="pesquisa-grid">
-        <p className="intro-text">{researchIntro}</p>
+        <p className="lead">{researchIntro}</p>
         <div className="chapter-photo">
           <Image
             src={photos.retratoApoiada.src}
@@ -23,19 +26,15 @@ export default function PesquisaPage() {
           />
         </div>
       </div>
-      {researchItems.length === 0 ? (
-        <p className="muted-note">[CONTEÚDO A DEFINIR]</p>
-      ) : (
-        <ol className="research-list">
-          {researchItems.map((item) => (
-            <li key={item.id}>
-              <p className="chapter-meta">{item.kind}</p>
-              <h2>{item.title}</h2>
-              <p>{item.detail}</p>
-            </li>
-          ))}
-        </ol>
-      )}
+      <ol className="research-list">
+        {researchItems.map((item) => (
+          <li key={item.id}>
+            <p className="chapter-meta">{item.kind}</p>
+            <h2>{item.title}</h2>
+            <p>{item.detail}</p>
+          </li>
+        ))}
+      </ol>
     </article>
   );
 }
