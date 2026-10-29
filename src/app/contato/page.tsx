@@ -6,14 +6,14 @@ import { person } from "@/content/person";
 
 export const metadata = pageMeta(
   "Contato",
-  `Fale com a campanha de ${person.publicName}.`,
+  `Fale com a equipe de ${person.publicName}.`,
   "/contato",
 );
 
 export default function ContatoPage() {
   return (
     <article className="inner-page">
-      <p className="kicker">Campanha</p>
+      <p className="kicker">Contato</p>
       <h1 className="chapter-title">Contato</h1>
       <p className="lead" style={{ marginTop: "1.4rem" }}>
         {contactNote}

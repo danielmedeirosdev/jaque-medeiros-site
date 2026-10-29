@@ -1,7 +1,7 @@
 export const site = {
   domain: "https://www.jaquemedeirospt.com.br",
-  title: "Jaque Medeiros 13111 | Deputada Estadual",
+  title: "Jaque Medeiros | Campinas e São Paulo",
   description:
-    "Site oficial de Jaque Medeiros — candidata a deputada estadual pelo PT. Vote 13111. Eles semeiam o ódio. Nós semeamos futuro.",
+    "Site oficial de Jaque Medeiros — jornalista, pesquisadora e liderança política de Campinas. Uma trajetória de luta, participação popular e compromisso com o povo.",
   locale: "pt_BR",
 } as const;

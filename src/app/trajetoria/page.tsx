@@ -6,7 +6,7 @@ import { chapters, trajetoriaIntro } from "@/content/timeline";
 
 export const metadata = pageMeta(
   "Quem é",
-  `Conheça a trajetória de ${person.publicName}: jornalista, pesquisadora e candidata a deputada estadual pelo PT.`,
+  `Conheça a trajetória de ${person.publicName}: jornalista, pesquisadora e liderança política de Campinas.`,
   "/trajetoria",
 );
 

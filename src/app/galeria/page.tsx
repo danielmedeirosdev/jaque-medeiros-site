@@ -5,7 +5,7 @@ import { galleryPhotos } from "@/lib/photos";
 
 export const metadata = pageMeta(
   "Galeria",
-  `Fotos de campanha e registros públicos de ${person.publicName}.`,
+  `Fotos da trajetória política e registros públicos de ${person.publicName}.`,
   "/galeria",
 );
 

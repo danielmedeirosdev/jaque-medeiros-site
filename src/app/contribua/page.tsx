@@ -3,15 +3,15 @@ import { contribute } from "@/content/contact";
 import { person } from "@/content/person";
 
 export const metadata = pageMeta(
-  "Apoie",
-  `Apoie a campanha de ${person.publicName} a deputada estadual pelo PT.`,
+  "Participe",
+  `Acompanhe a atuação política de ${person.publicName} e participe das próximas mobilizações.`,
   "/contribua",
 );
 
 export default function ContribuaPage() {
   return (
     <article className="inner-page">
-      <p className="kicker">Apoio</p>
+      <p className="kicker">Participação</p>
       <h1 className="chapter-title">{contribute.title}</h1>
       <p className="lead" style={{ marginTop: "1.4rem" }}>
         {contribute.text}

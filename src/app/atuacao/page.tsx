@@ -5,7 +5,7 @@ import { workFields, workIntro } from "@/content/work";
 
 export const metadata = pageMeta(
   "Propostas",
-  `Bandeiras de atuação de ${person.publicName} na campanha a deputada estadual pelo PT.`,
+  `Bandeiras que orientam a atuação política de ${person.publicName} em Campinas e São Paulo.`,
   "/atuacao",
 );
 

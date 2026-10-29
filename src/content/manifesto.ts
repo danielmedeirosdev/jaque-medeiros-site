@@ -78,7 +78,7 @@ export const manifesto = {
       paragraphs: [
         "Sou uma jovem mulher negra, nascida na cidade de Campinas, jornalista, mãe, pesquisadora, militante e filha da classe trabalhadora.",
         "Minha trajetória foi construída nas periferias, nos movimentos sociais, na escola pública, na universidade pública, nas ruas e na comunicação e ao lado de quem acredita que a política deve servir ao povo. Foi nesses espaços que aprendi que a política só faz sentido quando transforma a vida das pessoas e enfrenta as desigualdades.",
-        "É por isso que coloco meu nome à disposição como candidata a deputada estadual, para fortalecer as lutas do nosso povo e ampliar a presença de mulheres negras nos espaços de decisão.",
+        "Em 2026, coloquei meu nome à disposição como candidata a deputada estadual, para fortalecer as lutas do nosso povo e ampliar a presença de mulheres negras nos espaços de decisão.",
         "Não por um projeto individual, mas porque acredito que chegou a hora de disputar o futuro de São Paulo.",
       ],
     },

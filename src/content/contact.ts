@@ -45,11 +45,11 @@ export const channels: Channel[] = [
 ];
 
 export const contactNote =
-  "Fale com a campanha pelo Instagram, e-mail ou WhatsApp. Os demais canais serão publicados assim que a equipe confirmar.";
+  "Fale com a equipe de Jaque Medeiros pelo Instagram, e-mail ou WhatsApp. Os demais canais serão publicados assim que forem confirmados.";
 
 export const contribute = {
-  title: "Apoie a campanha",
-  text: "Sua contribuição fortalece a comunicação, a presença no território e a organização da campanha de Jaque Medeiros, candidata a deputada estadual pelo PT.",
-  buttonLabel: "Quero apoiar",
-  href: "https://queroapoiar.com.br/jaquemedeiros" as string | null,
+  title: "Siga junto nessa caminhada",
+  text: "A campanha eleitoral terminou, mas a construção política continua. Acompanhe as redes de Jaque Medeiros e participe das próximas mobilizações.",
+  buttonLabel: "Acompanhar no Instagram",
+  href: "https://www.instagram.com/jaquemedeirospt/" as string | null,
 };

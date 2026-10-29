@@ -10,6 +10,6 @@ export type NewsItem = {
 };
 
 export const newsIntro =
-  "Notas e registros da campanha serão publicados aqui. Por enquanto, leia o manifesto e acompanhe a trajetória de Jaque.";
+  "Notícias, posicionamentos e registros da atuação de Jaque serão publicados aqui. Enquanto isso, leia o manifesto e conheça sua trajetória.";
 
 export const newsItems: NewsItem[] = [];

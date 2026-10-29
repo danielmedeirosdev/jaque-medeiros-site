@@ -6,7 +6,7 @@ import { person } from "@/content/person";
 export const metadata = {
   ...pageMeta(
     "Notícias",
-    `Notícias e registros da campanha de ${person.publicName}.`,
+    `Notícias, posicionamentos e registros da atuação de ${person.publicName}.`,
     "/noticias",
   ),
   robots: {

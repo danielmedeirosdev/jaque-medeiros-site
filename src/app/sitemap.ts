@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { site } from "@/content/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date("2026-09-19T00:00:00-03:00");
+  const lastModified = new Date("2026-10-29T00:00:00-03:00");
   const routes = [
     { path: "", priority: 1 },
     { path: "/trajetoria", priority: 0.9 },

@@ -9,7 +9,7 @@ export type WorkField = {
 };
 
 export const workIntro =
-  "As bandeiras que orientam a candidatura de Jaque Medeiros à Assembleia Legislativa de São Paulo.";
+  "As bandeiras que orientam a atuação política de Jaque Medeiros em Campinas e no estado de São Paulo.";
 
 export const workFields: WorkField[] = [
   {

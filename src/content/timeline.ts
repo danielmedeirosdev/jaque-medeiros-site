@@ -17,7 +17,7 @@ export type ArchiveChapter = {
 };
 
 export const trajetoriaIntro =
-  "De Campinas para a disputa estadual: jovem mulher negra, jornalista, mãe, pesquisadora, militante e filha da classe trabalhadora. Candidata a deputada estadual pelo PT.";
+  "Jovem mulher negra, jornalista, mãe, pesquisadora, militante e filha da classe trabalhadora. De Campinas para a construção de uma política popular em todo o estado de São Paulo.";
 
 export const chapters: ArchiveChapter[] = [
   {
@@ -48,7 +48,7 @@ export const chapters: ArchiveChapter[] = [
     id: "militancia",
     period: "PT · São Paulo",
     title: "Da rua à Assembleia",
-    body: "Com passagem pela disputa municipal em Campinas e construção coletiva no Partido dos Trabalhadores, Jaque integra o grupo Mulheres na ALESP e leva para a campanha estadual a mesma ética do território: escuta, organização e presença. A Assembleia precisa da voz de quem conhece a periferia por dentro.",
+    body: "Com passagem pela disputa municipal em Campinas e pela eleição estadual de 2026, quando recebeu 8.649 votos, Jaque integra o grupo Mulheres na ALESP e mantém a mesma ética do território: escuta, organização e presença. Sua construção política continua ao lado de quem conhece a periferia por dentro.",
     layout: "image-left",
     photo: {
       src: photos.tribuna.src,

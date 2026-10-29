@@ -14,8 +14,6 @@ export function SiteFooter() {
           <p className="footer-meta">
             {person.role}
             <br />
-            Vote {person.ballotNumber}
-            <br />
             {person.party.name} · {person.city}, {person.state}
           </p>
           <SocialLinks tone="light" />
@@ -39,8 +37,6 @@ export function SiteFooter() {
       <div className="footer-bottom">
         <p>
           {person.publicName}
-          <span className="footer-sep">·</span>
-          {person.ballotNumber}
           <span className="footer-sep">·</span>
           Site institucional
         </p>

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata = pageMeta(
   "Manifesto",
-  `Manifesto de ${person.publicName}, candidata a deputada estadual pelo PT. ${person.starLine}`,
+  `Manifesto político de ${person.publicName}, apresentado na caminhada eleitoral de 2026.`,
   "/manifesto",
 );
 
@@ -27,7 +27,7 @@ export default function ManifestoPage() {
   return (
     <article className="manifesto-page">
       <header className="manifesto-hero">
-        <p className="kicker kicker-on-dark">Candidatura</p>
+        <p className="kicker kicker-on-dark">Manifesto de 2026</p>
         <h1 className="manifesto-title">{manifesto.title}</h1>
         <p className="manifesto-hero-line">{manifesto.refrain}</p>
         <div className="hero-actions">
@@ -40,8 +40,8 @@ export default function ManifestoPage() {
             {manifesto.participationLabel}
           </a>
           <PdfLink className="btn btn-light" />
-          <Link href="/contribua" className="btn btn-ghost-light">
-            Apoie a campanha
+          <Link href="/contato" className="btn btn-ghost-light">
+            Fale com a equipe
           </Link>
         </div>
       </header>

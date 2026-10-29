@@ -12,5 +12,5 @@ export const extraFooterItems = [{ href: "/galeria", label: "Galeria" }] as cons
 export const contributeCta = {
   href: "/contribua",
   label: "Apoie",
-  enabled: true,
+  enabled: false,
 } as const;

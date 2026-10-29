@@ -42,7 +42,7 @@ export function SiteHeader() {
         <Link
           href="/"
           className="brand"
-          aria-label={`${person.publicName} ${person.ballotNumber} — início`}
+          aria-label={`${person.publicName} — início`}
         >
           <BrandLogo variant="ink" priority className="brand-logo brand-logo-header" />
         </Link>
