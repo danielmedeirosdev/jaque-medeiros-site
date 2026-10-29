@@ -709,30 +709,63 @@ figure {
 
 /* Post-election thank-you */
 .thanks-section {
-  display: grid;
-  background: var(--paper);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: clamp(44rem, 125vw, 56rem);
+  overflow: hidden;
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.thanks-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    0deg,
+    rgba(8, 8, 8, 0.94) 0%,
+    rgba(8, 8, 8, 0.7) 38%,
+    rgba(8, 8, 8, 0.08) 78%
+  );
 }
 
 .thanks-copy {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  max-width: 46rem;
   padding: clamp(3.5rem, 9vw, 7rem) var(--page-pad);
 }
 
 .thanks-number {
-  margin: 0.6rem 0 0;
+  margin: 0;
   font-family: var(--font-display), system-ui, sans-serif;
-  font-size: clamp(4.6rem, 18vw, 10rem);
+  font-size: clamp(4.1rem, 17vw, 9rem);
   font-weight: 900;
   letter-spacing: -0.075em;
   line-height: 0.88;
-  color: var(--red);
+  color: var(--paper);
+}
+
+.thanks-number span {
+  display: block;
+  margin-top: 0.7rem;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: clamp(0.9rem, 4vw, 1.15rem);
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--yellow);
 }
 
 .thanks-title {
-  max-width: 10ch;
+  max-width: 12ch;
   margin: 1rem 0 0;
   font-family: var(--font-display), system-ui, sans-serif;
   font-size: clamp(2rem, 5.2vw, 4rem);
@@ -746,6 +779,7 @@ figure {
   max-width: 37rem;
   margin: 1.5rem 0 0;
   font-size: 1.08rem;
+  color: color-mix(in srgb, var(--paper) 90%, transparent);
 }
 
 .thanks-emphasis {
@@ -755,14 +789,25 @@ figure {
 }
 
 .thanks-photo {
-  position: relative;
-  min-height: clamp(28rem, 72vw, 44rem);
+  position: absolute;
+  inset: 0;
+  min-height: 100%;
   overflow: hidden;
   background: var(--smoke);
 }
 
 .thanks-photo img {
-  object-position: center 36%;
+  object-position: center 24%;
+}
+
+.thanks-copy .btn-outline {
+  color: var(--paper);
+  border-color: var(--paper);
+}
+
+.thanks-copy .btn-outline:hover {
+  color: var(--ink);
+  background: var(--paper);
 }
 
 /* Sections */
@@ -1689,12 +1734,25 @@ figure {
   }
 
   .thanks-section {
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    align-items: center;
     min-height: 48rem;
+  }
+
+  .thanks-section::after {
+    background: linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.9) 0%,
+      rgba(8, 8, 8, 0.68) 44%,
+      rgba(8, 8, 8, 0.08) 82%
+    );
   }
 
   .thanks-photo {
     min-height: 100%;
+  }
+
+  .thanks-photo img {
+    object-position: center 30%;
   }
 
   .spotlight-grid {

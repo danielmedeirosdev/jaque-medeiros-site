@@ -5,17 +5,14 @@ export function VoteThanksSection() {
   return (
     <section className="thanks-section" aria-labelledby="thanks-title">
       <div className="thanks-copy">
-        <p className="kicker">Eleições 2026</p>
-        <p className="thanks-number" aria-label="8.649 votos">
-          8.649
-        </p>
+        <p className="thanks-number">8.649 <span>votos</span></p>
         <h2 id="thanks-title" className="thanks-title">
-          votos. 8.649 motivos para agradecer.
+          Obrigada por caminhar com a gente.
         </h2>
         <p className="thanks-text">
           Obrigada a cada pessoa que confiou, caminhou, conversou e construiu
-          essa campanha com a gente. Essa votação nasceu de muitas mãos, de
-          Campinas e de todo o estado de São Paulo.
+          essa campanha. Essa votação nasceu de muitas mãos, de Campinas e de
+          todo o estado de São Paulo.
         </p>
         <p className="thanks-emphasis">
           A eleição terminou. O compromisso com o nosso povo continua.
