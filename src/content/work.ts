@@ -33,8 +33,8 @@ export const workFields: WorkField[] = [
     index: "03",
     title: "Tarifa Zero e direito à cidade",
     description: "Transporte de qualidade para a periferia.",
-    imageSrc: "/photos/campanha/tarifa-zero-13111.png",
-    imageAlt: "Arte da campanha Tarifa Zero 13111 de Jaque Medeiros.",
+    imageSrc: "/photos/campanha/tarifa-zero.svg",
+    imageAlt: "Ilustração de um ônibus representando a proposta de Tarifa Zero.",
     imageFit: "contain",
   },
   {

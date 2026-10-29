@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tarifa Zero</title>
+  <desc id="desc">Ilustração de um ônibus e a mensagem transporte é direito.</desc>
+  <rect width="1200" height="900" fill="#fff7f7"/>
+  <circle cx="600" cy="420" r="335" fill="#e30613"/>
+  <path d="M270 325c0-72 58-130 130-130h400c72 0 130 58 130 130v300H270V325Z" fill="#fff" stroke="#0a0a0a" stroke-width="28"/>
+  <rect x="335" y="260" width="530" height="185" rx="18" fill="#0a0a0a"/>
+  <rect x="375" y="300" width="200" height="105" fill="#f5c518"/>
+  <rect x="620" y="300" width="205" height="105" fill="#f5c518"/>
+  <rect x="330" y="500" width="210" height="38" rx="19" fill="#e30613"/>
+  <circle cx="415" cy="645" r="72" fill="#0a0a0a"/>
+  <circle cx="415" cy="645" r="30" fill="#fff"/>
+  <circle cx="785" cy="645" r="72" fill="#0a0a0a"/>
+  <circle cx="785" cy="645" r="30" fill="#fff"/>
+  <text x="600" y="790" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="900" fill="#0a0a0a">TARIFA ZERO</text>
+  <text x="600" y="850" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="8" fill="#e30613">TRANSPORTE É DIREITO</text>
+</svg>
