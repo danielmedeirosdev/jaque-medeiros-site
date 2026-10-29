@@ -23,7 +23,7 @@ export function BrandLogo({
     <span className={className}>
       <Image
         src={sources[variant]}
-        alt={`${person.publicName} ${person.ballotNumber} — ${person.role}`}
+        alt={`${person.publicName} — ${person.role}`}
         width={320}
         height={196}
         priority={priority}
