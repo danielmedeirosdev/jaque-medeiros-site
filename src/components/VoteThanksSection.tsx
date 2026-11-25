@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function VoteThanksSection() {
   return (
-    <section className="thanks-section" aria-labelledby="thanks-title">
+    <section id="agradecimento" className="thanks-section" aria-labelledby="thanks-title">
       <div className="thanks-copy">
         <p className="thanks-number">8.649 <span>votos</span></p>
         <h2 id="thanks-title" className="thanks-title">

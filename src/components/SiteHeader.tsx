@@ -44,7 +44,7 @@ export function SiteHeader() {
           className="brand"
           aria-label={`${person.publicName} — início`}
         >
-          <BrandLogo variant="white" priority className="brand-logo brand-logo-header" />
+          <BrandLogo variant="ink" priority className="brand-logo brand-logo-header" />
         </Link>
 
         <nav className="nav-desktop" aria-label="Principal">
@@ -57,7 +57,7 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <SocialLinks tone="light" className="nav-social" />
+          <SocialLinks tone="dark" className="nav-social" />
           {contributeCta.enabled ? (
             <Link href={contributeCta.href} className="btn btn-nav">
               {contributeCta.label}
@@ -90,7 +90,7 @@ export function SiteHeader() {
             {item.label}
           </Link>
         ))}
-        <SocialLinks tone="light" className="drawer-social" />
+        <SocialLinks tone="dark" className="drawer-social" />
         {contributeCta.enabled ? (
           <Link href={contributeCta.href} className="btn btn-primary drawer-cta">
             {contributeCta.label}

@@ -19,6 +19,10 @@ export function HeroCampaign({ imageSrc, imageAlt }: HeroCampaignProps) {
         sizes="(min-width: 1116px) 1116px, 100vw"
         className="hero-poster-image"
       />
+      <a className="hero-next" href="#agradecimento">
+        <span>Feche com a Jaque também</span>
+        <span className="hero-next-symbol" aria-hidden="true">↓</span>
+      </a>
     </section>
   );
 }
