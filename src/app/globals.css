@@ -451,6 +451,20 @@ figure {
   background: #1a1a1a;
 }
 
+.hero.hero-poster {
+  display: block;
+  min-height: 0;
+  line-height: 0;
+  background: var(--red);
+}
+
+.hero-poster-image {
+  display: block;
+  width: min(100%, 1014px);
+  height: auto;
+  margin: 0 auto;
+}
+
 .hero-media {
   position: absolute;
   inset: 0;

@@ -8,7 +8,7 @@ import { heroPhoto, introPhoto, photos } from "@/lib/photos";
 export default function HomePage() {
   return (
     <>
-      <HeroCampaign imageSrc={heroPhoto} imageAlt={photos.retratoGesto.alt} />
+      <HeroCampaign imageSrc={heroPhoto} imageAlt={photos.fechadoComJaque.alt} />
       <VoteThanksSection />
       <AboutPreview imageSrc={introPhoto} imageAlt={photos.retratoBracos.alt} />
       <PrioritiesSection />

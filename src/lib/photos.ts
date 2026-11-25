@@ -8,6 +8,14 @@ export type PhotoRecord = {
 };
 
 export const photos = {
+  fechadoComJaque: {
+    id: "fechado-com-jaque",
+    src: "/photos/campanha/fechado-com-jaque.jpeg",
+    alt: "Jaque Medeiros sorrindo, com o rosto em destaque, ao lado da frase Fechado com a Jaque.",
+    caption: "Fechado com a Jaque.",
+    aspectRatio: "1014 / 1280",
+    orientation: "portrait",
+  },
   atoRua: {
     id: "ato-rua",
     src: "/photos/equipe/ato-rua.png",
@@ -90,7 +98,7 @@ export const photos = {
   },
 } as const;
 
-export const heroPhoto = photos.retratoGesto.src;
+export const heroPhoto = photos.fechadoComJaque.src;
 export const introPhoto = photos.retratoCampinas.src;
 
 export const galleryPhotos: PhotoRecord[] = [
