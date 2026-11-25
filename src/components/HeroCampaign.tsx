@@ -13,10 +13,10 @@ export function HeroCampaign({ imageSrc, imageAlt }: HeroCampaignProps) {
       <Image
         src={imageSrc}
         alt={imageAlt}
-        width={1014}
-        height={1280}
+        width={1116}
+        height={1409}
         priority
-        sizes="(min-width: 1014px) 1014px, 100vw"
+        sizes="(min-width: 1116px) 1116px, 100vw"
         className="hero-poster-image"
       />
     </section>
