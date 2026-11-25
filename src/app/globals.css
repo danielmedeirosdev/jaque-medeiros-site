@@ -1794,6 +1794,11 @@ figure {
     --header-h: 9rem;
   }
 
+  .hero-poster-image {
+    object-fit: contain;
+    object-position: center;
+  }
+
   .footer-nav {
     justify-content: flex-end;
   }
