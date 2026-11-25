@@ -485,7 +485,7 @@ figure {
   height: calc(100svh - var(--header-h));
   min-height: calc(100svh - var(--header-h));
   object-fit: cover;
-  object-position: center top;
+  object-position: right top;
   margin: 0 auto;
 }
 
